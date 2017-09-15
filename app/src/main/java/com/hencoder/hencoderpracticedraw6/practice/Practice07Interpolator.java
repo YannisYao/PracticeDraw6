@@ -88,7 +88,7 @@ public class Practice07Interpolator extends LinearLayout {
                         .setInterpolator(interpolators[spinner.getSelectedItemPosition()])
                         .withEndAction(new Runnable() {
                             @Override
-                            public void run() {
+                            public void run() {//动画正常结束才会调用
                                 imageView.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
